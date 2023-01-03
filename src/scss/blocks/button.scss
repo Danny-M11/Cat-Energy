@@ -1,0 +1,21 @@
+button {
+    border: none;
+    text-transform: uppercase;
+    font-family: $oswald;
+    font-size: 16px;
+  }
+  
+  .button--primary {
+    background-color: $base-green;
+    color: $basic-white;
+  
+    &:hover {
+      background-color: $dark-green;
+    }
+  
+    &:active {
+      background-color: $dark-green;
+      color: rgba($color: $basic-white, $alpha: 0.3);
+    }
+  }
+  

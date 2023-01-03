@@ -1,0 +1,234 @@
+.form {
+    font-family: $oswald;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    width: 320px;
+    margin: 0 auto;
+  
+    .form__header {
+      margin: 0 auto;
+      margin-bottom: 39px;
+      width: 280px;
+    }
+  
+    legend {
+      text-transform: none;
+      font-size: 24px;
+      line-height: 26px;
+    }
+  
+    label {
+      font-size: 16px;
+    }
+  
+    .text-input {
+      font-size: 16px;
+      line-height: 18px;
+      padding-left: 15px;
+      outline: none;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+  
+    .text-input:hover {
+      border-color: $basic-grey;
+    }
+  
+    .text-input:focus {
+      border-color: $dark-grey;
+    }
+  
+    .text-input:required {
+      border-color: $input-error;
+    }
+  }
+  
+  /*fieldsets*/
+  .contacts,
+  .comments,
+  .additionaly {
+    border: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*line*/
+  .line {
+    position: relative;
+    width: 100%;
+  
+    &--contacts {
+      margin-bottom: 35px;
+    }
+  
+    &--comments {
+      margin-bottom: 38px;
+    }
+  
+    &--additionaly {
+      margin-bottom: 34px;
+    }
+  
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 50%;
+      background-color: $base-green;
+      z-index: -1;
+    }
+  
+    .line__container {
+      width: 320px;
+      box-sizing: border-box;
+    }
+  
+    .line__title {
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: $basic-white;
+      font-family: $oswald;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 26px;
+      height: 52px;
+    }
+  }
+  
+  /*button*/
+  .button__wrapper--form {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  
+  .button--form {
+    width: 280px;
+    padding: 7px 44px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
+  
+  /*label*/
+  label {
+    color: $dark-grey;
+  }
+  
+  
+  //десктопные стили
+  
+  // .form {
+  //   font-family: $oswald;
+  //   font-size: 20px;
+  //   line-height: 30px;
+  //   text-transform: uppercase;
+  //   width: 100%;
+  //   margin: 0 auto;
+  
+  //   .form__header {
+  //     margin: 0 auto;
+  //     margin-bottom: 66px;
+  //     width: 1220px;
+  //   }
+  
+  //   legend {
+  //     text-transform: none;
+  //     font-size: 36px;
+  //     line-height: 36px;
+  //   }
+  
+  //   .text-input {
+  //     font-size: 20px;
+  //     line-height: 30px;
+  //     padding-left: 19px;
+  //     outline: none;
+  //   }
+  
+  //   .text-input:hover {
+  //     border-color: $basic-grey;
+  //   }
+  
+  //   .text-input:focus {
+  //     border-color: $dark-grey;
+  //   }
+  
+  //   .text-input:required {
+  //     border-color: $input-error;
+  //   }
+  // }
+  
+  // /*fieldsets*/
+  // .contacts,
+  // .comments,
+  // .additionaly {
+  //   border: none;
+  //   position: relative;
+  // }
+  
+  // /*line*/
+  // .line {
+  //   position: relative;
+  //   width: 100%;
+  
+  //   &--contacts {
+  //     margin-bottom: 76px;
+  //   }
+  
+  //   &--comments {
+  //     margin-bottom: 76px;
+  //   }
+  
+  //   &--additionaly {
+  //     margin-bottom: 57px;
+  //   }
+  
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 2px;
+  //     top: 50%;
+  //     background-color: $base-green;
+  //     z-index: -1;
+  //   }
+  
+  //   .line__container {
+  //     max-width: 1220px;
+  //     margin: 0 auto;
+  //   }
+  
+  //   .line__title {
+  //     padding-left: 40px;
+  //     padding-right: 35px;
+  //     background-color: $basic-white;
+  //     margin-left: -40px;
+  //     font-family: $oswald;
+  //     font-size: 36px;
+  //     line-height: 36px;
+  //     margin-bottom: 81px;
+  //     width: max-content;
+  //   }
+  // }
+  
+  // /*button*/
+  // .button__wrapper--form {
+  //   margin: 0 auto;
+  //   margin-bottom: 82px;
+  //   width: 1220px;
+  // }
+  
+  // .button--form {
+  //   padding: 14px 188px;
+  //   width: 568px;
+  // }
+  
+  // /*label*/
+  // label {
+  //   color: $dark-grey;
+  // }
+  

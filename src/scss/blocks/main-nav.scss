@@ -1,0 +1,161 @@
+.main-nav {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    height: 100%;
+  }
+  
+  .main-nav__toggle {
+    display: block;
+    padding: 0;
+    width: 24px;
+    height: 16px;
+  }
+  
+  .main-nav__list {
+    //display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 66px;
+    width: 320px;
+    z-index: 1;
+    background-color: $basic-white;
+    padding-top: 1px;
+  }
+  
+  .main-nav__item {
+    display: inline-block;
+    width: 320px;
+    margin: 0 auto;
+    padding: 23px 0 23px;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    text-align: center;
+  
+    &:hover {
+      opacity: $hover;
+    }
+  
+    &:disabled {
+      opacity: $down;
+    }
+  }
+  
+  .main-nav__link {
+    color: $basic-black;
+  }
+  
+  @media (min-width: $tablet-width) {
+    .main-nav__toggle {
+      display: none;
+    }
+  
+    .main-nav__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 440px;
+      position: relative;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      padding-top: 18px;
+    }
+  
+    .main-nav__item {
+      height: 36px;
+      border: none;
+      padding: 0;
+      width: max-content;
+      margin: 0;
+  
+      &--current {
+        border-bottom: 2px solid $base-green;
+      }
+    }
+  
+    .main-nav__link {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+  }
+  
+  @media (min-width: $desktop-width) {
+    .main-nav__list {
+      width: 478px;
+      padding-top: 18px;
+      background-color: rgba($color: #ffffff, $alpha: 0);
+    }
+  
+    .main-nav__list--main-page {
+      .main-nav__item--current {
+        border-bottom: 2px solid $basic-white;
+      }
+  
+      .main-nav__link--main-page {
+        color: $basic-white;
+      }
+    }
+  }
+  
+  //десктопные стили
+  // .main-nav {
+  //   font-family: "Oswald", sans-serif;
+  //   font-size: 20px;
+  //   line-height: 30px;
+  //   text-transform: uppercase;
+  //   height: 100%;
+  // }
+  
+  // .main-nav__toggle {
+  //   display: block;
+  //   padding: 0;
+  //   width: 24px;
+  //   height: 16px;
+  // }
+  
+  // .main-nav__list {
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   height: 100%;
+  //   display: none;
+  
+  //   .main-nav__item {
+  //     display: inline-block;
+  //     height: 40px;
+  //     box-sizing: border-box;
+  //     text-align: center;
+  
+  //     &:hover {
+  //       opacity: $hover;
+  //     }
+  
+  //     &:disabled {
+  //       opacity: $down;
+  //     }
+  //   }
+  
+  //   .main-nav__item--current {
+  //     border-bottom: 4px solid $base-green;
+  //   }
+  
+  //   .main-nav__link {
+  //     color: $basic-black;
+  //   }
+  
+  //   &--main-page {
+  //     .main-nav__item--current {
+  //       border-bottom: 4px solid $basic-white;
+  //     }
+  
+  //     .main-nav__link {
+  //       color: $basic-white;
+  //     }
+  //   }
+  // }
+  

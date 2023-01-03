@@ -1,0 +1,53 @@
+.additionaly {
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+  
+    .additionaly__content {
+      width: 280px;
+      margin: 0 auto;
+    }
+  }
+  
+  .additionaly__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 12px;
+  
+    .additionaly__item {
+      width: 280px;
+      height: 30px;
+  
+      .control-label {
+        color: $basic-black;
+      }
+    }
+  }
+  
+  //десктопные стили
+  
+  // .additionaly {
+  //   margin: 0 auto;
+  //   margin-bottom: 61px;
+  
+  //   .additionaly__content {
+  //     width: 1220px;
+  //     margin: 0 auto;
+  //   }
+  // }
+  
+  // .additionaly__list {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   margin-right: 24px;
+  
+  //   .additionaly__item {
+  //     width: 221px;
+  
+  //     .control-label {
+  //       color: $basic-black;
+  //     }
+  //   }
+  // }
+  

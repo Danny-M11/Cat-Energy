@@ -1,0 +1,39 @@
+.copyright {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  
+  .copyright__link {
+    @include arial-text;
+    line-height: 18px;
+    color: $dark-grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 140px;
+  
+    &:hover path {
+      fill: $base-green;
+    }
+  
+    &:active {
+      opacity: 0.3;
+    }
+  
+    &:active path {
+      fill: $base-green;
+    }
+  }
+  
+  @media (min-width: $tablet-width) {
+    .copyright {
+      padding: 0;
+      border: none;
+    }
+  
+    .copyright__link {
+      gap: 22px;
+    }
+  }
+  

@@ -1,0 +1,57 @@
+.demonstration {
+    width: 280px;
+    position: relative;
+  
+    .demonstration__image {
+      &--fat {
+        margin-bottom: 25px;
+      }
+  
+      &--skinny {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  
+  @media (min-width: $tablet-width) {
+    .demonstration {
+      width: 708px;
+      padding-right: 68px;
+      padding-left: 68px;
+      box-sizing: border-box;
+    }
+  
+    .demonstration__image {
+      &--fat {
+        width: 560px;
+        height: 512px;
+      }
+  
+      &--skinny {
+        width: 560px;
+        height: 512px;
+      }
+    }
+  }
+  
+  //десктопные стили
+  
+  // .demonstration {
+  //   width: 591px;
+  //   position: relative;
+  
+  //   .demonstration__image {
+  //     &--fat {
+  //       margin-bottom: 25px;
+  //     }
+  
+  //     &--skinny {
+  //       position: absolute;
+  //       top: 0;
+  //       right: 0;
+  //     }
+  //   }
+  // }
+  

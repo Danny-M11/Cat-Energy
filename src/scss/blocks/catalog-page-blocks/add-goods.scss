@@ -1,0 +1,102 @@
+.add-goods {
+    width: 320px;
+  }
+  
+  .add-goods__line {
+    position: relative;
+    margin-bottom: 50px;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 50%;
+      background-color: $base-green;
+      z-index: -1;
+    }
+  
+    .add-goods__title {
+      padding-left: 60px;
+      padding-right: 22px;
+      background-color: $basic-white;
+      margin-left: -40px;
+      font-family: $oswald;
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 35px;
+      width: max-content;
+    }
+  }
+  
+  .add-goods__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .add-goods__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .add-goods__list {
+    margin-bottom: 35px;
+  
+    &:first-child {
+      border-top: 1px solid #ebebeb;
+    }
+  }
+  
+  //десктопные стили
+  // .add-goods__line {
+  //   position: relative;
+  //   margin-bottom: 50px;
+  
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 2px;
+  //     top: 50%;
+  //     background-color: $base-green;
+  //     z-index: -1;
+  //   }
+  
+  //   .add-goods__line-container {
+  //     max-width: 1220px;
+  //     margin: 0 auto;
+  //   }
+  
+  //   .add-goods__title {
+  //     padding-left: 40px;
+  //     padding-right: 35px;
+  //     background-color: $basic-white;
+  //     margin-left: -40px;
+  //     font-family: $oswald;
+  //     font-size: 36px;
+  //     line-height: 36px;
+  //     margin-bottom: 81px;
+  //     width: max-content;
+  //   }
+  // }
+  
+  // .add-goods__wrapper {
+  //   width: 1220px;
+  //   margin: 0 auto;
+  //   margin-bottom: 86px;
+  //   position: relative;
+  // }
+  
+  // .add-goods__content {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+  
+  // .add-goods__list {
+  //   &:first-child {
+  //     border-top: 1px solid $basic-grey;
+  //   }
+  // }
+  

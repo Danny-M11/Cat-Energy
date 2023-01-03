@@ -1,0 +1,111 @@
+.contacts {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  
+  .contacts__content {
+    width: 280px;
+    margin: 0 auto;
+  }
+  
+  .contacts__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+  }
+  
+  .contacts__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    position: relative;
+  
+    svg {
+      position: absolute;
+      right: 20px;
+    }
+  
+    .text-input--contacts:focus svg {
+      fill: #008000;
+    }
+  }
+  
+  .email-label {
+    margin-right: 11px;
+  }
+  
+  .tel-label {
+    margin-right: 8px;
+  }
+  
+  .text-input--contacts {
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid $input-border-color;
+    flex-grow: 1;
+  }
+  
+  //десктопные стили
+  
+  // .contacts {
+  //   width: 320px;
+  //   margin: 0 auto;
+  //   padding: 0;
+  //   margin-bottom: 69px;
+  // }
+  
+  // .contacts__content {
+  //   width: 280px;
+  //   margin: auto;
+  // }
+  
+  // .contacts__list {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  // }
+  
+  // .contacts__item {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  
+  //   &--email {
+  //     width: 569px;
+  //     position: relative;
+  //   }
+  
+  //   &--tel {
+  //     width: 572px;
+  //     position: relative;
+  //   }
+  
+  //   svg {
+  //     position: absolute;
+  //     right: 20px;
+  //   }
+  
+  //   .text-input--contacts:focus svg {
+  //     fill: #008000;
+  //   }
+  // }
+  
+  // .email-label {
+  //   margin-right: 20px;
+  // }
+  
+  // .tel-label {
+  //   margin-right: 15px;
+  // }
+  
+  // .text-input--contacts {
+  //   height: 50px;
+  //   box-sizing: border-box;
+  //   border: 1px solid $input-border-color;
+  //   flex-grow: 1;
+  // }
+  

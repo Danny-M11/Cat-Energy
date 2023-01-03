@@ -1,0 +1,42 @@
+.programm-radio {
+    width: 320px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  
+  
+    .programm-radio__list {
+      display: flex;
+      flex-direction: column;
+      width: 280px;
+      gap: 13px;
+      padding-top: 23px;
+      padding-bottom: 19px;
+      padding-left: 20px;
+    }
+  
+    .programm-radio__item {
+      height: 30px;
+    }
+  }
+  
+  
+  //десктопные стили
+  
+  // .programm-radio {
+  //   width: 568px;
+  //   border: 1px solid $input-border-color;
+  
+  //   .programm-radio__list {
+  //     display: flex;
+  //     flex-direction: column;
+  //     gap: 13px;
+  //     padding-top: 25px;
+  //     padding-bottom: 29px;
+  //     padding-left: 28px;
+  //   }
+  
+  //   .programm-radio__item {
+  //     height: 40px;
+  //   }
+  // }
+  

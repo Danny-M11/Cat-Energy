@@ -1,0 +1,29 @@
+.stock-container {
+    background: url("../img/cat-stock.png");
+    background-size: cover;
+    width: 280px;
+    height: 290px;
+    margin-bottom: 35px;
+  }
+  
+  .stock-container__wrapper {
+    width: 100%;
+    height: 100%;
+    background: url("../img/stock-icon.svg");
+    background-color: rgba(104, 183, 56, 0.85);
+    background-repeat: no-repeat;
+    background-position: 101px 59px;
+    position: relative;
+  }
+  
+  .stock-container__description {
+    @include arial-text;
+    width: 161px;
+    line-height: 20px;
+    text-align: center;
+    color: $basic-white;
+    position: absolute;
+    top: 187px;
+    left: 58px;
+  }
+  

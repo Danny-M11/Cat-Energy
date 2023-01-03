@@ -1,0 +1,59 @@
+.add-goods-card {
+    display: flex;
+    flex-direction: column;
+    padding: 13px 0 19px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ebebeb;
+  
+    .add-goods-card__title {
+      font-family: $oswald;
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 13px;
+      text-transform: uppercase;
+      color: #222222;
+    }
+  
+    .add-goods-card__price {
+      @include arial-text;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      color: $dark-grey;
+    }
+  
+    .add-goods-card__button {
+      width: 280px;
+      height: 40px;
+    }
+  }
+  
+  
+  //десктопные стили
+  // .add-goods-card {
+  //   display: grid;
+  //   grid-template-columns: 325px 244px 82px 245px;
+  //   border-bottom: 1px solid $basic-grey;
+  //   height: 72px;
+  //   box-sizing: border-box;
+  //   align-items: center;
+  
+  //   .add-goods-card__title {
+  //     font-family: $oswald;
+  //     font-size: 20px;
+  //     text-transform: uppercase;
+  //     color: #222222;
+  //   }
+  
+  //   .add-goods-card__volume,
+  //   .add-goods-card__price {
+  //     @include arial-text;
+  //     color: $dark-grey;
+  //   }
+  
+  //   .add-goods-card__button {
+  //     width: 244px;
+  //     height: 40px;
+  //   }
+  // }
+  

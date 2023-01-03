@@ -1,0 +1,100 @@
+.control {
+    position: relative;
+    display: block;
+    padding-left: 60px;
+  }
+  
+  .control__mark {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $basic-grey;
+    box-sizing: border-box;
+  }
+  
+  .control__mark--radio {
+    border-radius: 50%;
+  }
+  
+  .control__label {
+    color: $basic-black;
+    line-height: 30px;//центрирует лейбл
+  }
+  
+  .control__input[type="radio"]:checked + .control__mark--radio::after {
+    content: "";
+    position: absolute;
+    left: 7.25px;
+    top: 7.25px;
+    width: 13.5px;
+    height: 13.5px;
+    border-radius: 50%;
+    background-color: $base-green;
+  }
+  
+  .control:hover .control__mark {
+    border: 1px solid $ctrl-hover-color;
+  }
+  
+  .control__input:disabled .control {
+    opacity: 0.3;
+  }
+  
+  .control__input[type="checkbox"]:checked + .control__mark--checkbox {
+    background-image: url("/../img/checkbox-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  //десктопные стили
+  
+  // .control {
+  //   position: relative;
+  //   display: block;
+  //   padding-left: 60px;
+  // }
+  
+  // .control__mark {
+  //   position: absolute;
+  //   left: 0;
+  //   width: 40px;
+  //   height: 40px;
+  //   border: 1px solid $basic-grey;
+  //   box-sizing: border-box;
+  // }
+  
+  // .control__mark--radio {
+  //   border-radius: 50%;
+  // }
+  
+  // .control__label {
+  //   vertical-align: middle;
+  //   color: $basic-black;
+  // }
+  
+  // .control__input[type="radio"]:checked + .control__mark--radio::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 10px;
+  //   top: 10px;
+  //   width: 18px;
+  //   height: 18px;
+  //   border-radius: 50%;
+  //   background-color: $base-green;
+  // }
+  
+  // .control:hover .control__mark {
+  //   border: 1px solid $ctrl-hover-color;
+  // }
+  
+  // .control__input:disabled .control {
+  //   opacity: 0.3;
+  // }
+  
+  // .control__input[type="checkbox"]:checked + .control__mark--checkbox {
+  //   background-image: url("/../img/checkbox-tick.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  // }
+  

@@ -1,0 +1,28 @@
+.social__list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    width: 280px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  
+  .social__link {
+    &:hover path {
+      fill: $base-green;
+    }
+  
+    &:active path {
+      fill: $base-green;
+      opacity: 0.3;
+    }
+  }
+  
+  
+  @media (min-width: $tablet-width) {
+    .social__list {
+      border: none;
+    }
+  }
+  

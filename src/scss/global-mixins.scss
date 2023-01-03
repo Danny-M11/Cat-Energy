@@ -1,0 +1,14 @@
+@mixin title {
+    font-family: $oswald;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+  }
+  
+  @mixin arial-text {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  

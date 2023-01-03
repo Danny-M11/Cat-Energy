@@ -1,0 +1,122 @@
+.show-more-card {
+    width: 320px;
+  }
+  
+  .show-more-card__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 280px;
+    padding-top: 79px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+  
+    .show-more-card__cross {
+      position: absolute;
+      top: 26px;
+      left: 125px;
+  
+      &::before {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: #d3d3d3;
+        position: absolute;
+      }
+  
+      &::after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: #d3d3d3;
+        position: absolute;
+        transform: rotate(90deg);
+      }
+    }
+  
+    .show-more-card__title {
+      font-family: $oswald;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+  
+    .show-more-card__description {
+      @include arial-text;
+      font-size: 12px;
+      line-height: 16px;
+      color: $dark-grey;
+      text-align: center;
+      margin-bottom: 21px;
+    }
+  
+    .show-more-card__button {
+      width: 280px;
+      height: 40px;
+      color: $dark-grey;
+  
+      &:hover {
+        background-color: #ebebeb;
+      }
+  
+      &:active span {
+        opacity: 0.3;
+      }
+    }
+  }
+  
+  //десктопные стили
+  // .add-goods__line {
+  //   position: relative;
+  //   margin-bottom: 50px;
+  
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 2px;
+  //     top: 50%;
+  //     background-color: $base-green;
+  //     z-index: -1;
+  //   }
+  
+  //   .add-goods__line-container {
+  //     max-width: 1220px;
+  //     margin: 0 auto;
+  //   }
+  
+  //   .add-goods__title {
+  //     padding-left: 40px;
+  //     padding-right: 35px;
+  //     background-color: $basic-white;
+  //     margin-left: -40px;
+  //     font-family: $oswald;
+  //     font-size: 36px;
+  //     line-height: 36px;
+  //     margin-bottom: 81px;
+  //     width: max-content;
+  //   }
+  // }
+  
+  // .add-goods__wrapper {
+  //   width: 1220px;
+  //   margin: 0 auto;
+  //   margin-bottom: 86px;
+  //   position: relative;
+  // }
+  
+  // .add-goods__content {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+  
+  // .add-goods__list {
+  //   &:first-child {
+  //     border-top: 1px solid $basic-grey;
+  //   }
+  // }
+  

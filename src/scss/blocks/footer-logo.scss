@@ -1,0 +1,27 @@
+.footer-logo {
+    margin: 0 auto;
+    padding-top: 39px;
+    padding-bottom: 32px;
+    width: 280px;
+    text-align: center;
+    border-bottom: 1px solid #d9d9d9;
+    box-sizing: border-box;
+  
+    &:hover {
+      opacity: $logo-hover;
+    }
+  
+    &:active {
+      opacity: $logo-pressed;
+    }
+  }
+  
+  @media (min-width: $tablet-width) {
+    .footer-logo {
+      padding: 0;
+      margin: 0;
+      border: none;
+      width: 128px;
+    }
+  }
+  
