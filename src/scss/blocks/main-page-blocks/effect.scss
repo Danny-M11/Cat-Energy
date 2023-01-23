@@ -1,5 +1,6 @@
 .effect {
     width: 320px;
+    min-height: 659px;
     background-color: #eaeaea;
   }
   
@@ -7,22 +8,37 @@
     width: 280px;
     margin: 0 auto;
     padding-top: 25px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   
   
   @media (min-width: $tablet-width) {
     .effect {
       width: 100%;
-      background: linear-gradient(rgba(255, 255, 255, 0) 55.5%, rgb(242, 242, 242) 55.5%, rgb(242, 242, 242) 100%);
+      min-height: 1081px;
+      background: linear-gradient($basic-white 45%, #eaeaea 45%)
     }
   
     .effect__wrapper {
       width: 708px;
       padding-top: 0;
-      padding-bottom: 101px;
+      padding-bottom: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .effect {
+      min-height: 598px;
+      background: linear-gradient($basic-white 23%, #eaeaea 23%)
+    }
+
+    .effect__wrapper {
+      width: 1220px;
+      margin: 0 auto; 
+    }
+  }
+
+  
   //десктопные стили
   
   // .effect {

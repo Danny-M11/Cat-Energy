@@ -21,10 +21,13 @@
         <img src="img/header-logo-text.svg" width="101" height="18" alt="логотип магазина">
       </a>
       <div class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle toggle" type="button">
+          <span class="toggle__element"></span>
+          <span class="toggle__element"></span>
+          <span class="toggle__element"></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list main-nav__list--main-page list-reset">
+        <ul class="main-nav__list main-nav__list--main-page list-reset visually-hidden">
           <li class="main-nav__item main-nav__item--current">
             <a href="index.html" class="main-nav__link main-nav__link--main-page">
               Главная
@@ -66,9 +69,7 @@
             Занялся собой? Займись котом!
           </p>
         </div>
-        <div class="promo__image-wrapper">
-          <img class="promo__image" src="img/index-can.png" width="280" height="270" alt="изображение продукта">
-        </div>
+        <img class="promo__image" src="img/index-can.png" width="280" height="270" alt="изображение продукта">
         <button class="promo__button button button--primary" type="button">
           <span>Подобрать программу</span>
         </button>
@@ -89,8 +90,8 @@
               </svg>
             </div>
             <h3 class="programm-content__title">Похудение</h3>
-            <p class="programm-content__info">Ваш кот весит больше собаки и почти утратил способность<br>
-              лазить по деревьям? Пора на диету! Cat Energy Slim поможет<br>
+            <p class="programm-content__info">Ваш кот весит больше собаки и почти утратил способность
+              лазить по деревьям? Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.
             </p>
             <a class="programm-content__link" href="#">
@@ -111,8 +112,8 @@
               </svg>
             </div>
             <h3 class="programm-content__title">Набор массы</h3>
-            <p class="programm-content__info">Заработать авторитет среди дворовых котов и даже собак?<br>
-              Серия Cat Energy Pro поможет вашему коту нарастить<br>
+            <p class="programm-content__info">Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить
               необходимые мышцы!
             </p>
             <a class="programm-content__link" href="#">
@@ -136,8 +137,8 @@
               <span class="guide-content__icon-backing guide-content__icon-backing--step-one">
               </span>
               <p class="guide-content__description">
-                Функциональное питание<br>
-                содержит только полезные<br>
+                Функциональное питание
+                содержит только полезные
                 питательные вещества.
               </p>
               <span class="guide-content__number">1</span>
@@ -148,8 +149,8 @@
               <span class="guide-content__icon-backing guide-content__icon-backing--step-two">
               </span>
               <p class="guide-content__description">
-                Выпускается в виде порошка,<br>
-                который нужно лишь залить<br>
+                Выпускается в виде порошка,
+                который нужно лишь залить
                 кипятком и готово.
               </p>
               <span class="guide-content__number">2</span>
@@ -160,9 +161,9 @@
               <span class="guide-content__icon-backing guide-content__icon-backing--step-three">
               </span>
               <p class="guide-content__description">
-                Замените один-два приема<br>
-                обычной еды на наше<br>
-                функциональное питание.<br>
+                Замените один-два приема
+                обычной еды на наше
+                функциональное питание.
               </p>
               <span class="guide-content__number">3</span>
             </div>
@@ -173,7 +174,7 @@
               </span>
               <p class="guide-content__description">
                 Уже через месяц наслаждайтесь
-                изменениями к лучшему<br>
+                изменениями к лучшему
                 вашего питомца!
               </p>
               <span class="guide-content__number">4</span>
@@ -213,14 +214,16 @@
             </ul>
             <div class="stats__item stats__item--without-border">
               <span class="stats__description">Затраты на питание: 15 000 РУБ.</span>
-              <span class="stats__value">15 000 РУБ.</span>
             </div>
           </div>
         </div>
-        <div class="effect__demonstration demonstration">
-          <img class="demonstration__image demonstration__image--fat" src="img/cat-fat.png" width="280" height="256" alt="кот с ожирением">
-          <img class="demonstration__image demonstration__image--skinny" src="img/cat-skinny.png" width="280" height="256" alt="худой кот">
+      </div>
+      <div class="effect__slider slider-wrapper">
+        <div class="slider-wrapper__resize">
+          <img class="slider-wrapper__image slider-wrapper__image--fat" src="img/cat-fat.png" width="280" height="256" alt="кот с ожирением">
         </div>
+        
+        <img class="slider-wrapper__image slider-wrapper__image--skinny" src="img/cat-skinny.png" width="280" height="256" alt="худой кот">
       </div>
     </section>
 
@@ -294,4 +297,6 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/app.js"></script>
 </body>

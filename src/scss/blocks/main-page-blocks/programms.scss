@@ -121,8 +121,7 @@
     }
   
     .programm-content {
-      padding: 77px 52px 53px;
-      padding-right: 316px;
+      padding: 77px 316px 53px 52px;
       height: 372px;
       box-sizing: border-box;
     }
@@ -148,44 +147,116 @@
       margin: 0;
     }
   
-    .programm-content__icon--weight-loss {
-      width: 200px;
-      height: 211px;
-      top: 81px;
-      left: 446px;
-  
-      svg {
-        width: 140px;
-        height: 194px;
-        left: 30px;
-        top: -11px;
-      }
-  
-      .icon-backing--programm {
+    .programm-content__icon {
+      &--weight-loss {
         width: 200px;
-        height: 200px;
+        height: 211px;
+        top: 81px;
+        left: 446px;
+    
+        svg {
+          width: 140px;
+          height: 194px;
+          left: 30px;
+          top: -11px;
+        }
+    
+        .icon-backing--programm {
+          width: 200px;
+          height: 200px;
+        }
       }
     }
   
-    .programm-content__icon--weight-gain {
-      width: 268px;
-      height: 200px;
-      top: 91px;
-      left: 448px;
-  
-      svg {
+    .programm-content__icon {
+      &--weight-gain {
         width: 268px;
-        height: 112px;
-        left: -36px;
-        top: 44px;
-      }
-  
-      .icon-backing--programm {
-        width: 200px;
         height: 200px;
+        top: 91px;
+        left: 448px;
+    
+        svg {
+          width: 268px;
+          height: 112px;
+          left: -36px;
+          top: 44px;
+        }
+    
+        .icon-backing--programm {
+          width: 200px;
+          height: 200px;
+        }
       }
     }
   }
+
+    @media (min-width: $desktop-width) {
+      .programms {
+        margin-bottom: 71px;
+      }
+
+      .programms__wrapper {
+        width: 1220px;
+        margin: 0 auto;
+      }
+  
+      .programms__list {
+        display: flex;
+        gap: 80px;
+      }
+  
+      .programm-content {
+        width: 570px;
+        padding: 77px 51px 55px 52px;
+        box-sizing: border-box;
+      }
+  
+      .programm-content__title {
+        font-size: 36px;
+        line-height: 36px;
+        margin-left: 162px;
+        margin-bottom: 73px;
+      }
+  
+      .programm-content__info {
+        margin-bottom: 23px;
+      }
+  
+      .programm-content__icon {
+        &--weight-loss {
+          width: 100px;
+          height: 106px;
+          top: 41px;
+          left: 52px;
+          svg {
+            position: absolute;
+            width: 70px;
+            height: 97px;
+            left: 15px;
+            top: -6px;
+          }
+        }
+  
+        &--weight-gain {
+          width: 134px;
+          height: 100px;
+          top: 47px;
+          left: 52px;
+          svg {
+            position: absolute;
+            width: 134px;
+            height: 56px;
+            top: 20px;
+            left: -19px;
+          }
+        }
+  
+        .icon-backing--programm {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
   
   //десктопные стили
   // .programms__wrapper {

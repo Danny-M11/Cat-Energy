@@ -38,6 +38,9 @@
     color: $dark-grey;
     width: 139px;
     align-self: center;
+    p {
+      text-align: start;
+    }
   }
   
   @media (min-width: $tablet-width) {
@@ -48,8 +51,36 @@
     .map-contacts__wrapper {
       width: 708px;
       height: 199px;
-      padding: 56px 40px;
+      padding: 56px 40px;//40px + по 30px из-за свойста margin: 0 auto
       box-sizing: border-box;
+    }
+
+    .map-contacts__slogan {
+      width: 172px;
+    }
+
+    .map-contacts__address {
+      width: 160px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .map-contacts {
+      width: 565px;      
+    }
+
+    .map-contacts__wrapper {
+      width: 565px;
+      padding: 56px 80px;
+      position: absolute;
+      box-sizing: border-box;
+      top: 95px;
+      left: 110px;
+
+      &--catalog,
+      &--form {
+        background-color: $basic-white;
+      }
     }
   }
   

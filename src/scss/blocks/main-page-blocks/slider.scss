@@ -1,0 +1,30 @@
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    margin: 0 auto;
+    width: 280px;
+    height: 256px;
+}
+
+.slider-wrapper__image {
+    display: block;
+    cursor: pointer;
+
+    &--skinny {
+        padding-left: 30px;
+    }
+}
+
+.slider-wrapper__resize { 
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 140px;
+    overflow: hidden;
+    border-right: 4px solid $base-green;
+}
+
+.transition {
+    transition: 0.5s;
+}

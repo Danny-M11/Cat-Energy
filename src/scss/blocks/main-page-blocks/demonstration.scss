@@ -1,4 +1,4 @@
-.demonstration {
+.demonstration__wrapper {
     width: 280px;
     position: relative;
   
@@ -9,27 +9,32 @@
   
       &--skinny {
         position: absolute;
-        top: 0;
         right: 0;
       }
     }
   }
   
   @media (min-width: $tablet-width) {
-    .demonstration {
+    .demonstration__wrapper {
       width: 708px;
+      height: 462px;
       padding-right: 68px;
       padding-left: 68px;
       box-sizing: border-box;
+      position: relative;
     }
   
     .demonstration__image {
       &--fat {
+        position: absolute;
+        bottom: 100px;
         width: 560px;
         height: 512px;
       }
   
       &--skinny {
+        position: absolute;
+        bottom: 100px;
         width: 560px;
         height: 512px;
       }

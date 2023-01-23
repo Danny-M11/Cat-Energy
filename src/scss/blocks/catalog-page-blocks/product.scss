@@ -1,0 +1,27 @@
+.product__list {
+    border-top: 1px solid #ebebeb;
+}
+
+@media (min-width: $tablet-width) {
+    .product__wrapper {
+        width: 708px;
+        margin: 0 auto;
+    }
+
+    .product__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        border: none;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .product__wrapper {
+        width: 1220px;
+    }
+
+    .product__list {
+        gap: 80px;
+    }
+}

@@ -7,20 +7,32 @@
   }
   
   .main-nav__toggle {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 0;
     width: 24px;
     height: 16px;
+    position: relative;
+    background-color: #ffffff;
+    &:active .toggle__element {
+      background-color: $basic-grey;
+    }
+    .toggle__element {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background-color: $basic-black;
+    }
   }
-  
+
   .main-nav__list {
-    //display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     left: 0;
-    top: 66px;
+    top: 65px;
     width: 320px;
     z-index: 1;
     background-color: $basic-white;

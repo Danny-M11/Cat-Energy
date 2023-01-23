@@ -1,54 +1,72 @@
 .comments {
-    width: 320px;
-    margin: 0 auto;
-    margin-bottom: 21px;
-    padding: 0;
-  
-    .comments__content {
-      width: 280px;
-      margin: 0 auto;
-    }
-  
-    .comments__textarea {
-      padding: 9px 12px 9px 15px;
-      box-sizing: border-box;
-      width: 280px;
-      height: 152px;
-      outline: none;
-      resize: none;
-      border: 1px solid $input-border-color;
-      font-family: $oswald;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 18px;
-      text-transform: uppercase;
-    }
+  margin-bottom: 21px;
+}
+
+.comments__content {
+  width: 280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.comments__textarea {
+  padding: 9px 12px 9px 15px;
+  box-sizing: border-box;
+  width: 280px;
+  height: 152px;
+  outline: none;
+  resize: none;
+  border: 1px solid $input-border-color;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .comments {
+    margin-bottom: 65px;
   }
-  
-  
-  //десктопные стили
-  
-  // .comments {
-  //   margin-bottom: 67px;
-  //   padding: 0;
-  
-  //   .comments__content {
-  //     width: 1220px;
-  //     margin: 0 auto;
-  //   }
-  
-  //   .comments__textarea {
-  //     padding: 10px 19px;
-  //     box-sizing: border-box;
-  //     width: 1220px;
-  //     height: 174px;
-  //     outline: none;
-  //     resize: none;
-  //     border: 1px solid $input-border-color;
-  //     font-family: $oswald;
-  //     font-size: 20px;
-  //     line-height: 30px;
-  //     text-transform: uppercase;
-  //   }
-  // }
-  
+  .comments__content {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  .comments__textarea {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments__content {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+//десктопные стили
+
+// .comments {
+//   margin-bottom: 67px;
+//   padding: 0;
+
+//   .comments__content {
+//     width: 1220px;
+//     margin: 0 auto;
+//   }
+
+//   .comments__textarea {
+//     padding: 10px 19px;
+//     box-sizing: border-box;
+//     width: 1220px;
+//     height: 174px;
+//     outline: none;
+//     resize: none;
+//     border: 1px solid $input-border-color;
+//     font-family: $oswald;
+//     font-size: 20px;
+//     line-height: 30px;
+//     text-transform: uppercase;
+//   }
+// }

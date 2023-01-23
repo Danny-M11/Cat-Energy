@@ -7,6 +7,11 @@
     width: 280px;
     border-bottom: 1px solid #d9d9d9;
   }
+
+  .social__item {
+    width: 22px;
+    height: 18px;
+  }
   
   .social__link {
     &:hover path {
@@ -23,6 +28,7 @@
   @media (min-width: $tablet-width) {
     .social__list {
       border: none;
+      padding: 0;
     }
   }
   

@@ -20,8 +20,15 @@
     .page-footer__wrapper {
       width: 708px;
       padding-top: 58px;
+      padding-bottom: 55px;
       justify-content: space-between;
       flex-direction: row;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .page-footer__wrapper {
+      width: 1220px;
     }
   }
   

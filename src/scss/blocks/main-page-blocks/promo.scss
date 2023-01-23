@@ -1,4 +1,6 @@
 .promo {
+    display: flex;
+    flex-direction: column;
     width: 320px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -13,6 +15,7 @@
     font-weight: 400;
     position: relative;
     text-align: center;
+    box-sizing: border-box;
   }
   
   .promo__text {
@@ -44,21 +47,22 @@
     .promo {
       width: 768px;
       margin: 0;
+      margin-bottom: 526px;
     }
   
     .promo__wrapper {
+      display: flex;
+      flex-direction: column;
+      position: relative;
       width: 708px;
-    }
-  
-    .promo__image {
-      width: 708px;
-      height: 609px;
+      padding-left: 87px;
+      padding-top: 65px;
     }
   
     .promo__text {
       text-align: left;
-      padding-left: 84px;
       color: $basic-black;
+      order: 1;
     }
   
     .promo__slogan {
@@ -70,25 +74,47 @@
     .promo__intro {
       font-size: 20px;
       line-height: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 49px;
+    }
+
+     .promo__image {
+      order: 3;
+      z-index: -1;
+    }
+
+    .promo__image {
+      width: 708px;
+      height: 609px;
+      order: 3;
+      position: absolute;
+      top: 263px;
+      left: 0;
     }
   
     .promo__button {
-      position: absolute;
-      top: 292px;
-      left: 90px;
       width: 244px;
       height: 54px;
+      order: 2;
+      
     }
   }
   
   @media (min-width: $desktop-width) {
     .promo {
       width: 100%;
+      margin-bottom: 267px;
     }
   
     .promo__wrapper {
       width: 1220px;
+      padding-top: 110px;
+    }
+
+    .promo__image {
+      width: 552px;
+      height: 499px;
+      top: 32px;
+      left: 448px;
     }
   }
   

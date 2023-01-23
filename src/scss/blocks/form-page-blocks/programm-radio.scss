@@ -1,42 +1,49 @@
 .programm-radio {
-    width: 320px;
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
-  
-  
-    .programm-radio__list {
-      display: flex;
-      flex-direction: column;
-      width: 280px;
-      gap: 13px;
-      padding-top: 23px;
-      padding-bottom: 19px;
-      padding-left: 20px;
-    }
-  
-    .programm-radio__item {
-      height: 30px;
-    }
+  width: 320px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.programm-radio__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  box-sizing: border-box;
+  width: 280px;
+  padding-top: 23px;
+  padding-bottom: 19px;
+  padding-left: 20px;
+}
+
+.programm-radio__item {
+  margin-bottom: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .programm-radio {
+    width: 100%;
+    min-height: 196px;
   }
-  
-  
-  //десктопные стили
-  
-  // .programm-radio {
-  //   width: 568px;
-  //   border: 1px solid $input-border-color;
-  
-  //   .programm-radio__list {
-  //     display: flex;
-  //     flex-direction: column;
-  //     gap: 13px;
-  //     padding-top: 25px;
-  //     padding-bottom: 29px;
-  //     padding-left: 28px;
-  //   }
-  
-  //   .programm-radio__item {
-  //     height: 40px;
-  //   }
-  // }
-  
+}
+
+
+//десктопные стили
+
+// .programm-radio {
+//   width: 568px;
+//   border: 1px solid $input-border-color;
+
+//   .programm-radio__list {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 13px;
+//     padding-top: 25px;
+//     padding-bottom: 29px;
+//     padding-left: 28px;
+//   }
+
+//   .programm-radio__item {
+//     height: 40px;
+//   }
+// }

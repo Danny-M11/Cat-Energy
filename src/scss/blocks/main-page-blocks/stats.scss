@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin-bottom: 34px;
+    margin-bottom: 34px;  
   }
   
   .stats__item {
@@ -46,7 +46,6 @@
       font-family: $oswald;
       font-size: 14px;
       line-height: 20px;
-      margin-bottom: 20px;
   
       .stats__description {
         text-transform: uppercase;
@@ -94,6 +93,7 @@
   @media (min-width: $tablet-width) {
     .stats {
       width: 708px;
+      margin-bottom: 250px;
     }
   
     .stats__title {
@@ -118,6 +118,7 @@
   
     .stats__list {
       gap: 42px;
+      margin: 0;
     }
   
     .stats__item {
@@ -152,9 +153,41 @@
   
     .stats__item--without-border {
       display: block;
-      width: 200px;
+      width: 190px;
       text-align: right;
       font-size: 20px;
+      margin: 0;
+      padding-top: 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .stats__title {
+      margin-bottom: 146px;
+    }
+
+    .stats__paragraph {
+      width: 439px;
+    }
+
+    .stats__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 55px;
+    }
+
+    .stats__item {
+      &--without-border {
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+        width: 327px;
+      }
+    }
+
+    .stats__description-wrapper {
+      background-color: #eaeaea;
     }
   }
   //десктопные стили
